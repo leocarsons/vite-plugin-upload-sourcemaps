@@ -1,0 +1,30 @@
+{
+  "name": "vite-plugin-upload-sourcemaps",
+  "version": "1.0.2",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "yarn build"
+  },
+  "dependencies": {
+    "@apm-insight-web/upload-sourcemaps": "^1.0.0",
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^18.0.0",
+    "rollup": "^3.0.0",
+    "tslib": "^2.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
